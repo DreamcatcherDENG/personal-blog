@@ -61,64 +61,6 @@
       </categories>
   </entry>
   <entry>
-    <title>EditText</title>
-    <url>/personal-blog/2022/04/29/EditText/</url>
-    <content><![CDATA[<blockquote>
-<p>1.EditText常用属性</p>
-<p>2.获取EditText中的内容</p>
-<p>3.常见问题</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="EditText常用属性"><a href="#EditText常用属性" class="headerlink" title="EditText常用属性"></a>EditText常用属性</h1><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>hint</code></td>
-<td>输入提示</td>
-</tr>
-<tr>
-<td><code>textColorHint</code></td>
-<td>输入提示的颜色</td>
-</tr>
-<tr>
-<td><code>inputType</code></td>
-<td>输入类型(具体可以输入哪些类型可以<code>Ctrl+B</code>查看)</td>
-</tr>
-<tr>
-<td><code>drawableLeft</code>[<code>Right</code>,<code>Bottom</code>,<code>Top</code>]</td>
-<td>在输入框的左方添加可绘制资源</td>
-</tr>
-<tr>
-<td><code>drawablePadding</code></td>
-<td>设置可绘制资源与输入内容的间距</td>
-</tr>
-<tr>
-<td><code>paddingLeft</code>[<code>Right</code>,<code>Bottom</code>,<code>Top</code>]</td>
-<td>设置内容(包括可绘制资源文件)与边框左边的间距</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h1 id="获取EditText中的内容"><a href="#获取EditText中的内容" class="headerlink" title="获取EditText中的内容"></a>获取EditText中的内容</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">EditText</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">&quot;@+id/edit_one&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">&quot;300dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">&quot;100dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:drawableStart</span>=<span class="string">&quot;@drawable/ic_baseline_account_circle_24&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:drawablePadding</span>=<span class="string">&quot;50dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:hint</span>=<span class="string">&quot;Hello&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:paddingLeft</span>=<span class="string">&quot;10dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:inputType</span>=<span class="string">&quot;text&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:background</span>=<span class="string">&quot;@color/teal_700&quot;</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">Button</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_gravity</span>=<span class="string">&quot;center_vertical&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">&quot;200dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">&quot;70dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">&quot;@+id/btn&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:text</span>=<span class="string">&quot;获取EditText中的文本内容&quot;</span></span></span><br><span class="line"><span class="tag">    /&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line">    EditText editText;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">        Button btn = findViewById(R.id.btn);</span><br><span class="line">        editText = findViewById(R.id.edit_one);</span><br><span class="line">        btn.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">                System.out.println(editText.getText().toString());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220429163131533.png" alt="image-20220429163131533"></p>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220429163239786.png" alt="image-20220429163239786"></p>
-<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p>关于<code>Cannot resolve symbol &#39;@+id/edit_one&#39;</code>的问题，点击<code>Build</code>-&gt;<code>Clean Project</code>重构项目就可解决</p>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220429161258390.png" alt="image-20220429161258390"></p>
-]]></content>
-      <categories>
-        <category>Android</category>
-        <category>Android 控件</category>
-        <category>常见问题</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Button</title>
     <url>/personal-blog/2022/04/29/Button/</url>
     <content><![CDATA[<blockquote>
@@ -237,7 +179,65 @@
       <categories>
         <category>Android</category>
         <category>Android 控件</category>
-        <category>scale type</category>
+        <category>图片拉伸及填充</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>EditText</title>
+    <url>/personal-blog/2022/04/29/EditText/</url>
+    <content><![CDATA[<blockquote>
+<p>1.EditText常用属性</p>
+<p>2.获取EditText中的内容</p>
+<p>3.常见问题</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="EditText常用属性"><a href="#EditText常用属性" class="headerlink" title="EditText常用属性"></a>EditText常用属性</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hint</code></td>
+<td>输入提示</td>
+</tr>
+<tr>
+<td><code>textColorHint</code></td>
+<td>输入提示的颜色</td>
+</tr>
+<tr>
+<td><code>inputType</code></td>
+<td>输入类型(具体可以输入哪些类型可以<code>Ctrl+B</code>查看)</td>
+</tr>
+<tr>
+<td><code>drawableLeft</code>[<code>Right</code>,<code>Bottom</code>,<code>Top</code>]</td>
+<td>在输入框的左方添加可绘制资源</td>
+</tr>
+<tr>
+<td><code>drawablePadding</code></td>
+<td>设置可绘制资源与输入内容的间距</td>
+</tr>
+<tr>
+<td><code>paddingLeft</code>[<code>Right</code>,<code>Bottom</code>,<code>Top</code>]</td>
+<td>设置内容(包括可绘制资源文件)与边框左边的间距</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="获取EditText中的内容"><a href="#获取EditText中的内容" class="headerlink" title="获取EditText中的内容"></a>获取EditText中的内容</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">EditText</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">&quot;@+id/edit_one&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">&quot;300dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">&quot;100dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:drawableStart</span>=<span class="string">&quot;@drawable/ic_baseline_account_circle_24&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:drawablePadding</span>=<span class="string">&quot;50dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:hint</span>=<span class="string">&quot;Hello&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:paddingLeft</span>=<span class="string">&quot;10dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:inputType</span>=<span class="string">&quot;text&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:background</span>=<span class="string">&quot;@color/teal_700&quot;</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">Button</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_gravity</span>=<span class="string">&quot;center_vertical&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">&quot;200dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">&quot;70dp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">&quot;@+id/btn&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:text</span>=<span class="string">&quot;获取EditText中的文本内容&quot;</span></span></span><br><span class="line"><span class="tag">    /&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line">    EditText editText;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">        Button btn = findViewById(R.id.btn);</span><br><span class="line">        editText = findViewById(R.id.edit_one);</span><br><span class="line">        btn.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">                System.out.println(editText.getText().toString());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220429163131533.png" alt="image-20220429163131533"></p>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220429163239786.png" alt="image-20220429163239786"></p>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p>关于<code>Cannot resolve symbol &#39;@+id/edit_one&#39;</code>的问题，点击<code>Build</code>-&gt;<code>Clean Project</code>重构项目就可解决</p>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220429161258390.png" alt="image-20220429161258390"></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+        <category>Android 控件</category>
+        <category>常见问题</category>
       </categories>
   </entry>
   <entry>
@@ -2435,110 +2435,6 @@
       </categories>
   </entry>
   <entry>
-    <title>JavaScript and NodeJs</title>
-    <url>/personal-blog/2022/05/01/Nodejs/</url>
-    <content><![CDATA[<blockquote>
-<p>本文介绍了Node.js的安装与配置方法,javascript的部分新增语法特性,收录了javascript和Node.js学习网站和前端框架网站,收集了学习过程中遇到的问题</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><ul>
-<li><p><a href="http://javascript.ruanyifeng.com/grammar/basic.html">阮一峰Javascript标准参考教程</a> </p>
-</li>
-<li><p><a href="https://www.javascript.fun/">前端工坊</a> javascript和node.js框架库</p>
-</li>
-<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript">MDN Web Docs</a> javascript 权威教程</p>
-</li>
-<li><p><a href="https://element.eleme.cn/#/en-US">Element-ui</a> 前端Ui组件库</p>
-</li>
-<li><p><a href="https://www.bootcss.com/">Bootstrap</a> 前端Ui组件库</p>
-</li>
-<li><p><a href="https://www.chinaw3c.org/">W3C中文官网</a></p>
-</li>
-<li><p><a href="https://cnodejs.org/">Node.js中文社区</a></p>
-</li>
-</ul>
-<h1 id="Node-js安装与配置"><a href="#Node-js安装与配置" class="headerlink" title="Node.js安装与配置"></a>Node.js安装与配置</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>从官网下载Node.js <a href="https://nodejs.org/en/">node官网</a>设置安装路径一直点击<code>next</code>就可以了</p>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>默认情况下，npm下载的包都存放在<code>C:\Users\YOU\AppData\Roaming\npm\node_modules</code>目录的下<br>缓存放在<code>C:\Users\YOU\AppData\Local\npm-cache</code>下,可使用<br><code>npm config list -l</code>查看详情信息</p>
-<p>更改默认缓存和包的位置，设置为自定义路径<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;...\NodeJs\npm_gloabal_config\npm&quot;</span><br><span class="line"></span><br><span class="line">npm config set cache &quot;...\NodeJs\npm_gloabal_config\npm-cache&quot;</span><br></pre></td></tr></table></figure><br>将该路径加入到环境变量<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">...\NodeJs\npm_gloabal_config\npm\node_modules</span><br></pre></td></tr></table></figure></p>
-<h2 id="Nodejs权限设置"><a href="#Nodejs权限设置" class="headerlink" title="Nodejs权限设置"></a>Nodejs权限设置</h2><p>当nodejs安装在其他盘时，无法使用 <code>npm install</code>命令，需要对node的安装目录进行权限设置，需要赋予用户对该文件的完全控制、修改等权限</p>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20211107184427464.png" alt="image-20211107184427464"></p>
-<h2 id="安装国内淘宝cnpm"><a href="#安装国内淘宝cnpm" class="headerlink" title="安装国内淘宝cnpm"></a>安装国内淘宝cnpm</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<h1 id="Node-js学习指南-中文官网入门教程"><a href="#Node-js学习指南-中文官网入门教程" class="headerlink" title="Node.js学习指南 中文官网入门教程"></a>Node.js学习指南 <a href="http://nodejs.cn/learn">中文官网入门教程</a></h1><h2 id="新手入门目录"><a href="#新手入门目录" class="headerlink" title="新手入门目录"></a>新手入门目录</h2><ul>
-<li>词汇结构</li>
-<li>表达式</li>
-<li>数据类型</li>
-<li>类</li>
-<li>变量</li>
-<li>函数</li>
-<li>this</li>
-<li>箭头函数</li>
-<li>循环</li>
-<li>作用域</li>
-<li>数组</li>
-<li>模板字面量</li>
-<li>分号</li>
-<li>严格模式</li>
-<li>ECMAScript 6、2016、2017<h2 id="高手进阶须知"><a href="#高手进阶须知" class="headerlink" title="高手进阶须知"></a>高手进阶须知</h2></li>
-<li>异步编程与回调</li>
-<li>定时器</li>
-<li>Promise</li>
-<li>Async 与 Await</li>
-<li>闭包</li>
-<li>事件循环</li>
-</ul>
-<h1 id="Node-js介绍"><a href="#Node-js介绍" class="headerlink" title="Node.js介绍"></a>Node.js介绍</h1><blockquote>
-<p>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.   ——<a href="https://nodejs.org/en/">node.js官网</a></p>
-<p>Node.js是基于chrome’s V8 JavaScript 引擎的Javascript运行时环境</p>
-</blockquote>
-<h2 id="Node-js和浏览器的区别"><a href="#Node-js和浏览器的区别" class="headerlink" title="Node.js和浏览器的区别"></a>Node.js和浏览器的区别</h2><ul>
-<li>Node.js = EcmaScript + API</li>
-<li>浏览器 = EcmaScript + BOM + DOM</li>
-</ul>
-<h1 id="安装-vue-cli-3-12-1"><a href="#安装-vue-cli-3-12-1" class="headerlink" title="安装@vue/cli@3.12.1"></a>安装@vue/cli@3.12.1</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i @vue/cli@3.12.1 -g</span><br></pre></td></tr></table></figure>
-<p>命令行输入<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vue ui</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>运行失败，将<code>@vue下</code>的<code>cli</code>文件拷贝到<code>\@vue\cli\node_modules\@vue</code>目录下即可</p>
-<blockquote>
-<p>虽然很让包重复了，但能有效解决问题</p>
-<p>导致运行失败的原因:由于自定义包路径时将包目录设置成立<code>\NodeJs\npm_gloabal_config\npm\node_modules</code>导致最终生成的包下载目录为<br><code>\NodeJs\npm_gloabal_config\npm\node_modules\node_modules</code>,<br><code>vue ui</code>启动时找到的加载目录不对，导致无法启动<br>正确的设置应该是<code>\NodeJs\npm_gloabal_config\npm\</code>,当npm下载包时将自动在该目录下创建<code>node_modules</code>目录</p>
-</blockquote>
-<h1 id="ES6新增特性"><a href="#ES6新增特性" class="headerlink" title="ES6新增特性"></a>ES6新增特性</h1><h2 id="let和const"><a href="#let和const" class="headerlink" title="let和const"></a>let和const</h2><p>let用于定义变量，const用于定义常量<br>使用let和const替代var，可以避免变量穿透和常量被修改，使用<code>&#39;use strict&#39;</code>启用严格检查模式，必选使用let,const,var定义变量，否则编译报错</p>
-<h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><p>ES6使用字符串模板语法</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="string">&quot;18&quot;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">introduce1</span>(<span class="params">person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;我是&quot;</span> + person.name + <span class="string">&quot;,我今年&quot;</span> + person.age + <span class="string">&quot;岁!&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//ES6模板字符串</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">introduce2</span>(<span class="params">person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`我是<span class="subst">$&#123;person.name&#125;</span>我今年<span class="subst">$&#123;person.age&#125;</span>岁!`</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(introduce(person))</span><br><span class="line"><span class="comment">//输出:我是张三我今年18岁!</span></span><br></pre></td></tr></table></figure>
-<h2 id="函数默认参数"><a href="#函数默认参数" class="headerlink" title="函数默认参数"></a>函数默认参数</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//调用sum()返回NaN</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//调用sum()返回0</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a = <span class="number">0</span>, b = <span class="number">0</span></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function">(<span class="params">a, b</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// do something else</span></span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//当返回函数体可以直接由一行代码计算出返回结果时，可以省略return</span></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function">(<span class="params">a, b</span>) =&gt;</span> a + b;</span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>,<span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">//当函数体只有一个参数时，可以省略小括号</span></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="params">arr</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        result = result + arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr2 = arr.map(<span class="function"><span class="params">obj</span> =&gt;</span> obj * <span class="number">2</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="对象简写"><a href="#对象简写" class="headerlink" title="对象简写"></a>对象简写</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;张三&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> age = <span class="number">18</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//key和value名称一样时，可以直接使用value直接表示key和value</span></span><br><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: name,</span><br><span class="line">    <span class="attr">age</span>: age</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> person1 = &#123;</span><br><span class="line">    name,</span><br><span class="line">    age</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="对象解构"><a href="#对象解构" class="headerlink" title="对象解构"></a>对象解构</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">18</span>,</span><br><span class="line">    <span class="attr">height</span>: <span class="number">180</span>,</span><br><span class="line">    <span class="attr">gender</span>: <span class="string">&quot;男&quot;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> &#123; name, age, height, gender &#125; = person;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.name, person.age, person.height, person.gender)</span><br><span class="line"><span class="built_in">console</span>.log(person[<span class="string">&#x27;name&#x27;</span>], person[<span class="string">&#x27;age&#x27;</span>], person[<span class="string">&#x27;height&#x27;</span>], person[<span class="string">&#x27;gender&#x27;</span>])</span><br><span class="line"><span class="built_in">console</span>.log(name, age, height, gender)</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">输出：</span></span><br><span class="line"><span class="comment">张三 18 180 男</span></span><br><span class="line"><span class="comment">张三 18 180 男</span></span><br><span class="line"><span class="comment">张三 18 180 男</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<h2 id="对象传播操作符"><a href="#对象传播操作符" class="headerlink" title="对象传播操作符"></a>对象传播操作符</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">18</span>,</span><br><span class="line">    <span class="attr">height</span>: <span class="number">180</span>,</span><br><span class="line">    <span class="attr">gender</span>: <span class="string">&quot;男&quot;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//将未被接受的属性全部赋值到...后的变量中</span></span><br><span class="line"><span class="keyword">var</span> &#123; name, age, ...other &#125; = person;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(name, age, other.gender, other.height)</span><br></pre></td></tr></table></figure>
-<h1 id="Node-js-API"><a href="#Node-js-API" class="headerlink" title="Node.js API"></a>Node.js API</h1><h1 id="process"><a href="#process" class="headerlink" title="process"></a>process</h1><p>process是一个全局内置对象，可以在代码中的任何位置访问此对象，这个对象代表我们的node.js代码宿主的操作系统进程对象。</p>
-<p>使用process对象可以截获进程的异常、退出等事件，也可以获取进程的当前目录、环境变量、内存占用等信息，还可以执行进程退出、工作目录切换等操作。</p>
-<h2 id="获取当前文件路径"><a href="#获取当前文件路径" class="headerlink" title="获取当前文件路径"></a>获取当前文件路径</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var path = process.cwd()</span><br><span class="line">console.log(path);</span><br></pre></td></tr></table></figure>
-<h2 id="切换目录"><a href="#切换目录" class="headerlink" title="切换目录"></a>切换目录</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">process.chdir(&quot;D:/dir&quot;);</span><br></pre></td></tr></table></figure>
-<h2 id="标准输出流"><a href="#标准输出流" class="headerlink" title="标准输出流"></a>标准输出流</h2><p>日志输出就是用标准输出封装<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.hello = <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</span><br><span class="line">    process.stdout.write(d+<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.hello(<span class="string">&quot;哈哈哈&quot;</span>)	</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log = <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</span><br><span class="line">    process.stdout.write(d+<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;哈哈哈&quot;</span>)	</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20211107203906303.png" alt="image-20211107203906303"></p>
-<h2 id="标准错误输出"><a href="#标准错误输出" class="headerlink" title="标准错误输出"></a>标准错误输出</h2><p>标准错误输出用来输入错误信息<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.stderr.write(<span class="string">&quot;test&quot;</span>)</span><br></pre></td></tr></table></figure></p>
-<h2 id="标准输入流"><a href="#标准输入流" class="headerlink" title="标准输入流"></a>标准输入流</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.stdin.on(<span class="string">&#x27;readable&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> chunk = process.stdin.read();</span><br><span class="line">    <span class="keyword">if</span> (chunk !== <span class="literal">null</span>) &#123;</span><br><span class="line">        process.stdout.write(<span class="string">&#x27;data: &#x27;</span> + chunk);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20211107204402314.png" alt="image-20211107204402314"></p>
-<h2 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.exit(code);</span><br></pre></td></tr></table></figure>
-<h2 id="监听事件"><a href="#监听事件" class="headerlink" title="监听事件"></a>监听事件</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.on(<span class="string">&#x27;event name&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.stdin.setEncoding(编码);</span><br><span class="line"> </span><br><span class="line">process.stdout.setEncoding(编码);</span><br><span class="line"> </span><br><span class="line">process.stderr.setEncoding(编码);</span><br></pre></td></tr></table></figure>
-<h2 id="fs模块-文件操作"><a href="#fs模块-文件操作" class="headerlink" title="fs模块(文件操作)"></a>fs模块(文件操作)</h2><p>fs没有专门的文件移动函数，可以通过重命名文件实现文件移动</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"> </span><br><span class="line">fs.rename(oldPath,newPath,<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">&#x27;renamed complete&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="url模块-url操作"><a href="#url模块-url操作" class="headerlink" title="url模块(url操作))"></a>url模块(url操作))</h2><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20211107205859438.png" alt="image-20211107205859438"></p>
-<blockquote>
-<p>import和require都可以导入模块,<code>require/exports</code>是CommonJS的标准,而<code>import/export</code>是ECMAScript2015（ES6）标准</p>
-<p>CommonJS 加载的是一个对象（即 module.exports 属性），该对象只有在脚本运行完才会生成。而 ES6 模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成。——阮一峰</p>
-</blockquote>
-<h2 id="使用node-js创建一个服务"><a href="#使用node-js创建一个服务" class="headerlink" title="使用node.js创建一个服务"></a>使用node.js创建一个服务</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用require()函数添加导入node的module</span></span><br><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>);</span><br><span class="line">http.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">request, response</span>) </span>&#123;</span><br><span class="line">    response.writeHead(<span class="number">200</span>, &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/plain&#x27;</span> &#125;);</span><br><span class="line">    response.end(<span class="string">&#x27;Hello World&#x27;</span>);</span><br><span class="line">&#125;).listen(<span class="number">8081</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;Server running at http://127.0.0.1:8081/&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="使用node-js连接mysql数据库"><a href="#使用node-js连接mysql数据库" class="headerlink" title="使用node.js连接mysql数据库"></a>使用node.js连接mysql数据库</h2><blockquote>
-<p>可去<a href="https://www.npmjs.com/">nmp的官网</a>搜索下载需要的module, 下载方法参加<a href="https://docs.npmjs.com/">npm官方文档</a>,搜索结果页附带模块的具体使用教程的官方地址<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//当没有mysql的module时,使用nmp install mysql</span></span><br><span class="line"><span class="keyword">var</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> connection = mysql.createConnection(&#123;</span><br><span class="line">    <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">    <span class="attr">user</span>: <span class="string">&quot;********&quot;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&quot;********&quot;</span>,</span><br><span class="line">    <span class="attr">database</span>: <span class="string">&quot;********&quot;</span></span><br><span class="line">&#125;);</span><br><span class="line">connection.connect();</span><br><span class="line"></span><br><span class="line">connection.query(<span class="string">&#x27;select * from exam_record_2012&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">error, results, fields</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (error) <span class="keyword">throw</span> error;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">&#125;);</span><br><span class="line">connection.end();</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>连接时会报错<code>ER_NOT_SUPPORTED_AUTH_MODE</code><br><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function">code: &#x27;<span class="title">ER_NOT_SUPPORTED_AUTH_MODE</span>&#x27;,</span></span><br><span class="line"><span class="function"><span class="title">errno</span>: 1251,</span></span><br><span class="line"><span class="function"><span class="title">sqlMessage</span>: &#x27;<span class="title">Client</span> <span class="title">does</span> <span class="title">not</span> <span class="title">support</span> <span class="title">authentication</span> <span class="title">protocol</span> <span class="title">requested</span> <span class="title">by</span> <span class="title">server</span>; <span class="title">consider</span> <span class="title">upgrading</span> <span class="title">MySQL</span> <span class="title">client</span>&#x27;,</span></span><br><span class="line"><span class="function"><span class="title">sqlState</span>: &#x27;08004&#x27;,</span></span><br><span class="line"><span class="function"><span class="title">fatal</span>: <span class="title">true</span></span></span><br></pre></td></tr></table></figure><br>这是因为mysql8.0后采用caching_sha2_password加密，而node的mysql连接库采用mysql_native_password 加密方式<br>登录mysql重新设置mysql加密方式<br><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql<span class="operator">&gt;</span><span class="keyword">alter</span> <span class="keyword">user</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> identified <span class="keyword">with</span> mysql_native_password <span class="keyword">by</span> <span class="string">&#x27;yourpassword&#x27;</span>;</span><br><span class="line">查看表是否更改</span><br><span class="line">mysql<span class="operator">&gt;</span> <span class="keyword">select</span> host,<span class="keyword">user</span>,plugin <span class="keyword">from</span> <span class="keyword">user</span>;</span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+------------------+-----------------------+</span></span><br><span class="line"><span class="operator">|</span> host      <span class="operator">|</span> <span class="keyword">user</span>             <span class="operator">|</span> plugin                <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+------------------+-----------------------+</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> mysql.infoschema <span class="operator">|</span> caching_sha2_password <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> mysql.session    <span class="operator">|</span> caching_sha2_password <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> mysql.sys        <span class="operator">|</span> caching_sha2_password <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> root             <span class="operator">|</span> mysql_native_password <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+------------------+-----------------------+</span></span><br></pre></td></tr></table></figure><br>成功修改后，重新运行连接mysql的js代码结果如下<br><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">[</span><br><span class="line">  RowDataPacket &#123;</span><br><span class="line"><span class="function">    id: 1,</span></span><br><span class="line"><span class="function">    <span class="title">uid</span>: 123,</span></span><br><span class="line"><span class="function">    <span class="title">exam_id</span>: 123,</span></span><br><span class="line"><span class="function">    <span class="title">start_time</span>: 2021-11-05<span class="title">T10</span>:57:50.000<span class="title">Z</span>,</span></span><br><span class="line"><span class="function">    <span class="title">submit_time</span>: 2021-11-20<span class="title">T10</span>:57:55.000<span class="title">Z</span>,</span></span><br><span class="line"><span class="function">    <span class="title">score</span>: 95</span></span><br><span class="line"><span class="function">  &#125;</span></span><br><span class="line"><span class="function">]</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-        <category>ES6</category>
-        <category>Node</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Notification</title>
     <url>/personal-blog/2022/04/30/Notification/</url>
     <content><![CDATA[<blockquote>
@@ -2677,6 +2573,311 @@
       <categories>
         <category>Android</category>
         <category>Android 控件</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>JavaScript and NodeJs</title>
+    <url>/personal-blog/2022/05/01/Nodejs/</url>
+    <content><![CDATA[<blockquote>
+<p>本文介绍了Node.js的安装与配置方法,javascript的部分新增语法特性,收录了javascript和Node.js学习网站和前端框架网站,收集了学习过程中遇到的问题</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><ul>
+<li><p><a href="http://javascript.ruanyifeng.com/grammar/basic.html">阮一峰Javascript标准参考教程</a> </p>
+</li>
+<li><p><a href="https://www.javascript.fun/">前端工坊</a> javascript和node.js框架库</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript">MDN Web Docs</a> javascript 权威教程</p>
+</li>
+<li><p><a href="https://element.eleme.cn/#/en-US">Element-ui</a> 前端Ui组件库</p>
+</li>
+<li><p><a href="https://www.bootcss.com/">Bootstrap</a> 前端Ui组件库</p>
+</li>
+<li><p><a href="https://www.chinaw3c.org/">W3C中文官网</a></p>
+</li>
+<li><p><a href="https://cnodejs.org/">Node.js中文社区</a></p>
+</li>
+</ul>
+<h1 id="Node-js安装与配置"><a href="#Node-js安装与配置" class="headerlink" title="Node.js安装与配置"></a>Node.js安装与配置</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>从官网下载Node.js <a href="https://nodejs.org/en/">node官网</a>设置安装路径一直点击<code>next</code>就可以了</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>默认情况下，npm下载的包都存放在<code>C:\Users\YOU\AppData\Roaming\npm\node_modules</code>目录的下<br>缓存放在<code>C:\Users\YOU\AppData\Local\npm-cache</code>下,可使用<br><code>npm config list -l</code>查看详情信息</p>
+<p>更改默认缓存和包的位置，设置为自定义路径<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;...\NodeJs\npm_gloabal_config\npm&quot;</span><br><span class="line"></span><br><span class="line">npm config set cache &quot;...\NodeJs\npm_gloabal_config\npm-cache&quot;</span><br></pre></td></tr></table></figure><br>将该路径加入到环境变量<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">...\NodeJs\npm_gloabal_config\npm\node_modules</span><br></pre></td></tr></table></figure></p>
+<h2 id="Nodejs权限设置"><a href="#Nodejs权限设置" class="headerlink" title="Nodejs权限设置"></a>Nodejs权限设置</h2><p>当nodejs安装在其他盘时，无法使用 <code>npm install</code>命令，需要对node的安装目录进行权限设置，需要赋予用户对该文件的完全控制、修改等权限</p>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20211107184427464.png" alt="image-20211107184427464"></p>
+<h2 id="安装国内淘宝cnpm"><a href="#安装国内淘宝cnpm" class="headerlink" title="安装国内淘宝cnpm"></a>安装国内淘宝cnpm</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<h1 id="Node-js学习指南-中文官网入门教程"><a href="#Node-js学习指南-中文官网入门教程" class="headerlink" title="Node.js学习指南 中文官网入门教程"></a>Node.js学习指南 <a href="http://nodejs.cn/learn">中文官网入门教程</a></h1><h2 id="新手入门目录"><a href="#新手入门目录" class="headerlink" title="新手入门目录"></a>新手入门目录</h2><ul>
+<li>词汇结构</li>
+<li>表达式</li>
+<li>数据类型</li>
+<li>类</li>
+<li>变量</li>
+<li>函数</li>
+<li>this</li>
+<li>箭头函数</li>
+<li>循环</li>
+<li>作用域</li>
+<li>数组</li>
+<li>模板字面量</li>
+<li>分号</li>
+<li>严格模式</li>
+<li>ECMAScript 6、2016、2017<h2 id="高手进阶须知"><a href="#高手进阶须知" class="headerlink" title="高手进阶须知"></a>高手进阶须知</h2></li>
+<li>异步编程与回调</li>
+<li>定时器</li>
+<li>Promise</li>
+<li>Async 与 Await</li>
+<li>闭包</li>
+<li>事件循环</li>
+</ul>
+<h1 id="Node-js介绍"><a href="#Node-js介绍" class="headerlink" title="Node.js介绍"></a>Node.js介绍</h1><blockquote>
+<p>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.   ——<a href="https://nodejs.org/en/">node.js官网</a></p>
+<p>Node.js是基于chrome’s V8 JavaScript 引擎的Javascript运行时环境</p>
+</blockquote>
+<h2 id="Node-js和浏览器的区别"><a href="#Node-js和浏览器的区别" class="headerlink" title="Node.js和浏览器的区别"></a>Node.js和浏览器的区别</h2><ul>
+<li>Node.js = EcmaScript + API</li>
+<li>浏览器 = EcmaScript + BOM + DOM</li>
+</ul>
+<h1 id="安装-vue-cli-3-12-1"><a href="#安装-vue-cli-3-12-1" class="headerlink" title="安装@vue/cli@3.12.1"></a>安装@vue/cli@3.12.1</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i @vue/cli@3.12.1 -g</span><br></pre></td></tr></table></figure>
+<p>命令行输入<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vue ui</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>运行失败，将<code>@vue下</code>的<code>cli</code>文件拷贝到<code>\@vue\cli\node_modules\@vue</code>目录下即可</p>
+<blockquote>
+<p>虽然很让包重复了，但能有效解决问题</p>
+<p>导致运行失败的原因:由于自定义包路径时将包目录设置成立<code>\NodeJs\npm_gloabal_config\npm\node_modules</code>导致最终生成的包下载目录为<br><code>\NodeJs\npm_gloabal_config\npm\node_modules\node_modules</code>,<br><code>vue ui</code>启动时找到的加载目录不对，导致无法启动<br>正确的设置应该是<code>\NodeJs\npm_gloabal_config\npm\</code>,当npm下载包时将自动在该目录下创建<code>node_modules</code>目录</p>
+</blockquote>
+<h1 id="ES6新增特性"><a href="#ES6新增特性" class="headerlink" title="ES6新增特性"></a>ES6新增特性</h1><h2 id="let和const"><a href="#let和const" class="headerlink" title="let和const"></a>let和const</h2><p>let用于定义变量，const用于定义常量<br>使用let和const替代var，可以避免变量穿透和常量被修改，使用<code>&#39;use strict&#39;</code>启用严格检查模式，必选使用let,const,var定义变量，否则编译报错</p>
+<h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><p>ES6使用字符串模板语法</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="string">&quot;18&quot;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">introduce1</span>(<span class="params">person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;我是&quot;</span> + person.name + <span class="string">&quot;,我今年&quot;</span> + person.age + <span class="string">&quot;岁!&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//ES6模板字符串</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">introduce2</span>(<span class="params">person</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`我是<span class="subst">$&#123;person.name&#125;</span>我今年<span class="subst">$&#123;person.age&#125;</span>岁!`</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(introduce(person))</span><br><span class="line"><span class="comment">//输出:我是张三我今年18岁!</span></span><br></pre></td></tr></table></figure>
+<h2 id="函数默认参数"><a href="#函数默认参数" class="headerlink" title="函数默认参数"></a>函数默认参数</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//调用sum()返回NaN</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//调用sum()返回0</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a = <span class="number">0</span>, b = <span class="number">0</span></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function">(<span class="params">a, b</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// do something else</span></span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//当返回函数体可以直接由一行代码计算出返回结果时，可以省略return</span></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function">(<span class="params">a, b</span>) =&gt;</span> a + b;</span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>,<span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">//当函数体只有一个参数时，可以省略小括号</span></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="params">arr</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">        result = result + arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr2 = arr.map(<span class="function"><span class="params">obj</span> =&gt;</span> obj * <span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="对象简写"><a href="#对象简写" class="headerlink" title="对象简写"></a>对象简写</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">&quot;张三&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> age = <span class="number">18</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//key和value名称一样时，可以直接使用value直接表示key和value</span></span><br><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: name,</span><br><span class="line">    <span class="attr">age</span>: age</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> person1 = &#123;</span><br><span class="line">    name,</span><br><span class="line">    age</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="对象解构"><a href="#对象解构" class="headerlink" title="对象解构"></a>对象解构</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">18</span>,</span><br><span class="line">    <span class="attr">height</span>: <span class="number">180</span>,</span><br><span class="line">    <span class="attr">gender</span>: <span class="string">&quot;男&quot;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> &#123; name, age, height, gender &#125; = person;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.name, person.age, person.height, person.gender)</span><br><span class="line"><span class="built_in">console</span>.log(person[<span class="string">&#x27;name&#x27;</span>], person[<span class="string">&#x27;age&#x27;</span>], person[<span class="string">&#x27;height&#x27;</span>], person[<span class="string">&#x27;gender&#x27;</span>])</span><br><span class="line"><span class="built_in">console</span>.log(name, age, height, gender)</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">输出：</span></span><br><span class="line"><span class="comment">张三 18 180 男</span></span><br><span class="line"><span class="comment">张三 18 180 男</span></span><br><span class="line"><span class="comment">张三 18 180 男</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h2 id="对象传播操作符"><a href="#对象传播操作符" class="headerlink" title="对象传播操作符"></a>对象传播操作符</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">18</span>,</span><br><span class="line">    <span class="attr">height</span>: <span class="number">180</span>,</span><br><span class="line">    <span class="attr">gender</span>: <span class="string">&quot;男&quot;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//将未被接受的属性全部赋值到...后的变量中</span></span><br><span class="line"><span class="keyword">var</span> &#123; name, age, ...other &#125; = person;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(name, age, other.gender, other.height)</span><br></pre></td></tr></table></figure>
+<h1 id="Node-js-API"><a href="#Node-js-API" class="headerlink" title="Node.js API"></a>Node.js API</h1><h1 id="process"><a href="#process" class="headerlink" title="process"></a>process</h1><p>process是一个全局内置对象，可以在代码中的任何位置访问此对象，这个对象代表我们的node.js代码宿主的操作系统进程对象。</p>
+<p>使用process对象可以截获进程的异常、退出等事件，也可以获取进程的当前目录、环境变量、内存占用等信息，还可以执行进程退出、工作目录切换等操作。</p>
+<h2 id="获取当前文件路径"><a href="#获取当前文件路径" class="headerlink" title="获取当前文件路径"></a>获取当前文件路径</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var path = process.cwd()</span><br><span class="line">console.log(path);</span><br></pre></td></tr></table></figure>
+<h2 id="切换目录"><a href="#切换目录" class="headerlink" title="切换目录"></a>切换目录</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">process.chdir(&quot;D:/dir&quot;);</span><br></pre></td></tr></table></figure>
+<h2 id="标准输出流"><a href="#标准输出流" class="headerlink" title="标准输出流"></a>标准输出流</h2><p>日志输出就是用标准输出封装<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">console</span>.hello = <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</span><br><span class="line">    process.stdout.write(d+<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.hello(<span class="string">&quot;哈哈哈&quot;</span>)	</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log = <span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</span><br><span class="line">    process.stdout.write(d+<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;哈哈哈&quot;</span>)	</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20211107203906303.png" alt="image-20211107203906303"></p>
+<h2 id="标准错误输出"><a href="#标准错误输出" class="headerlink" title="标准错误输出"></a>标准错误输出</h2><p>标准错误输出用来输入错误信息<br><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.stderr.write(<span class="string">&quot;test&quot;</span>)</span><br></pre></td></tr></table></figure></p>
+<h2 id="标准输入流"><a href="#标准输入流" class="headerlink" title="标准输入流"></a>标准输入流</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.stdin.on(<span class="string">&#x27;readable&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> chunk = process.stdin.read();</span><br><span class="line">    <span class="keyword">if</span> (chunk !== <span class="literal">null</span>) &#123;</span><br><span class="line">        process.stdout.write(<span class="string">&#x27;data: &#x27;</span> + chunk);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20211107204402314.png" alt="image-20211107204402314"></p>
+<h2 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.exit(code);</span><br></pre></td></tr></table></figure>
+<h2 id="监听事件"><a href="#监听事件" class="headerlink" title="监听事件"></a>监听事件</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.on(<span class="string">&#x27;event name&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//do something</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">process.stdin.setEncoding(编码);</span><br><span class="line"> </span><br><span class="line">process.stdout.setEncoding(编码);</span><br><span class="line"> </span><br><span class="line">process.stderr.setEncoding(编码);</span><br></pre></td></tr></table></figure>
+<h1 id="fs模块-文件操作"><a href="#fs模块-文件操作" class="headerlink" title="fs模块(文件操作)"></a>fs模块(文件操作)</h1><p>fs没有专门的文件移动函数，可以通过重命名文件实现文件移动</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"> </span><br><span class="line">fs.rename(oldPath,newPath,<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">&#x27;renamed complete&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h1 id="url模块-url操作"><a href="#url模块-url操作" class="headerlink" title="url模块(url操作))"></a>url模块(url操作))</h1><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20211107205859438.png" alt="image-20211107205859438"></p>
+<blockquote>
+<p>import和require都可以导入模块,<code>require/exports</code>是CommonJS的标准,而<code>import/export</code>是ECMAScript2015（ES6）标准</p>
+<p>CommonJS 加载的是一个对象（即 module.exports 属性），该对象只有在脚本运行完才会生成。而 ES6 模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成。——阮一峰</p>
+</blockquote>
+<h1 id="使用node-js创建一个服务"><a href="#使用node-js创建一个服务" class="headerlink" title="使用node.js创建一个服务"></a>使用node.js创建一个服务</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用require()函数添加导入node的module</span></span><br><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>);</span><br><span class="line">http.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">request, response</span>) </span>&#123;</span><br><span class="line">    response.writeHead(<span class="number">200</span>, &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/plain&#x27;</span> &#125;);</span><br><span class="line">    response.end(<span class="string">&#x27;Hello World&#x27;</span>);</span><br><span class="line">&#125;).listen(<span class="number">8081</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;Server running at http://127.0.0.1:8081/&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="使用node-js连接mysql数据库"><a href="#使用node-js连接mysql数据库" class="headerlink" title="使用node.js连接mysql数据库"></a>使用node.js连接mysql数据库</h1><blockquote>
+<p>可去<a href="https://www.npmjs.com/">nmp的官网</a>搜索下载需要的module, 下载方法参加<a href="https://docs.npmjs.com/">npm官方文档</a>,搜索结果页附带模块的具体使用教程的官方地址<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//当没有mysql的module时,使用nmp install mysql</span></span><br><span class="line"><span class="keyword">var</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> connection = mysql.createConnection(&#123;</span><br><span class="line">    <span class="attr">host</span>: <span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">    <span class="attr">user</span>: <span class="string">&quot;********&quot;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&quot;********&quot;</span>,</span><br><span class="line">    <span class="attr">database</span>: <span class="string">&quot;********&quot;</span></span><br><span class="line">&#125;);</span><br><span class="line">connection.connect();</span><br><span class="line"></span><br><span class="line">connection.query(<span class="string">&#x27;select * from exam_record_2012&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">error, results, fields</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (error) <span class="keyword">throw</span> error;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">&#125;);</span><br><span class="line">connection.end();</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>连接时会报错<code>ER_NOT_SUPPORTED_AUTH_MODE</code><br><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function">code: &#x27;<span class="title">ER_NOT_SUPPORTED_AUTH_MODE</span>&#x27;,</span></span><br><span class="line"><span class="function"><span class="title">errno</span>: 1251,</span></span><br><span class="line"><span class="function"><span class="title">sqlMessage</span>: &#x27;<span class="title">Client</span> <span class="title">does</span> <span class="title">not</span> <span class="title">support</span> <span class="title">authentication</span> <span class="title">protocol</span> <span class="title">requested</span> <span class="title">by</span> <span class="title">server</span>; <span class="title">consider</span> <span class="title">upgrading</span> <span class="title">MySQL</span> <span class="title">client</span>&#x27;,</span></span><br><span class="line"><span class="function"><span class="title">sqlState</span>: &#x27;08004&#x27;,</span></span><br><span class="line"><span class="function"><span class="title">fatal</span>: <span class="title">true</span></span></span><br></pre></td></tr></table></figure><br>这是因为mysql8.0后采用caching_sha2_password加密，而node的mysql连接库采用mysql_native_password 加密方式<br>登录mysql重新设置mysql加密方式</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql<span class="operator">&gt;</span><span class="keyword">alter</span> <span class="keyword">user</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> identified <span class="keyword">with</span> mysql_native_password <span class="keyword">by</span> <span class="string">&#x27;yourpassword&#x27;</span>;</span><br><span class="line">查看表是否更改</span><br><span class="line">mysql<span class="operator">&gt;</span> <span class="keyword">select</span> host,<span class="keyword">user</span>,plugin <span class="keyword">from</span> <span class="keyword">user</span>;</span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+------------------+-----------------------+</span></span><br><span class="line"><span class="operator">|</span> host      <span class="operator">|</span> <span class="keyword">user</span>             <span class="operator">|</span> plugin                <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+------------------+-----------------------+</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> mysql.infoschema <span class="operator">|</span> caching_sha2_password <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> mysql.session    <span class="operator">|</span> caching_sha2_password <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> mysql.sys        <span class="operator">|</span> caching_sha2_password <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> root             <span class="operator">|</span> mysql_native_password <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+------------------+-----------------------+</span></span><br></pre></td></tr></table></figure>
+<p>成功修改后，重新运行连接mysql的js代码结果如下<br><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">[</span><br><span class="line">  RowDataPacket &#123;</span><br><span class="line"><span class="function">    id: 1,</span></span><br><span class="line"><span class="function">    <span class="title">uid</span>: 123,</span></span><br><span class="line"><span class="function">    <span class="title">exam_id</span>: 123,</span></span><br><span class="line"><span class="function">    <span class="title">start_time</span>: 2021-11-05<span class="title">T10</span>:57:50.000<span class="title">Z</span>,</span></span><br><span class="line"><span class="function">    <span class="title">submit_time</span>: 2021-11-20<span class="title">T10</span>:57:55.000<span class="title">Z</span>,</span></span><br><span class="line"><span class="function">    <span class="title">score</span>: 95</span></span><br><span class="line"><span class="function">  &#125;</span></span><br><span class="line"><span class="function">]</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+        <category>ES6</category>
+        <category>Node</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>ToolBar</title>
+    <url>/personal-blog/2022/05/01/ToolBar/</url>
+    <content><![CDATA[<span id="more"></span>
+<blockquote>
+<ol>
+<li>ToolBar常见属性设置</li>
+<li>设置navigationIcon可被点击</li>
+<li>设置ToolBar的Title居中</li>
+</ol>
+</blockquote>
+<h1 id="ToolBar常见属性设置"><a href="#ToolBar常见属性设置" class="headerlink" title="ToolBar常见属性设置"></a>ToolBar常见属性设置</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>android:background</td>
+<td>背景</td>
+</tr>
+<tr>
+<td>app:title</td>
+<td>标题</td>
+</tr>
+<tr>
+<td>app:subtitle</td>
+<td>子标题</td>
+</tr>
+<tr>
+<td>app:titleTextColor</td>
+<td>颜色</td>
+</tr>
+<tr>
+<td>app:subtitleTextColor</td>
+<td>子标题颜色</td>
+</tr>
+<tr>
+<td>app:titleMarginStart</td>
+<td>标题距离左边开始的间距(有Icon相对于Icon,无Icon相对于父容器边界)</td>
+</tr>
+<tr>
+<td>app:navigationIcon</td>
+<td>导航图标</td>
+</tr>
+<tr>
+<td>app:logo</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">androidx.appcompat.widget.Toolbar</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/toolbar1&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">&quot;?attr/actionBarSize&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:background</span>=<span class="string">&quot;#00FF00&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:title</span>=<span class="string">&quot;大标题&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:subtitle</span>=<span class="string">&quot;小标题&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:titleTextColor</span>=<span class="string">&quot;#FF0000&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:subtitleTextColor</span>=<span class="string">&quot;#0000FF&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:titleMarginStart</span>=<span class="string">&quot;100dp&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:navigationIcon</span>=<span class="string">&quot;@drawable/ic_baseline_arrow_back_24&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:logo</span>=<span class="string">&quot;@drawable/ic_launcher_background&quot;</span></span></span><br><span class="line"><span class="tag">        /&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220501152343113.png" alt="image-20220501152343113"></p>
+<h1 id="设置navigationIcon可被点击"><a href="#设置navigationIcon可被点击" class="headerlink" title="设置navigationIcon可被点击"></a>设置navigationIcon可被点击</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Toolbar toolbar = findViewById(R.id.toolbar1);</span><br><span class="line"></span><br><span class="line">toolbar.setNavigationOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;箭头被点击了!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h1 id="设置ToolBar的Title居中"><a href="#设置ToolBar的Title居中" class="headerlink" title="设置ToolBar的Title居中"></a>设置ToolBar的Title居中</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">androidx.appcompat.widget.Toolbar</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/toolbar2&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">&quot;?attr/actionBarSize&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:background</span>=<span class="string">&quot;#00FF00&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:navigationIcon</span>=<span class="string">&quot;@drawable/ic_baseline_arrow_back_24&quot;</span></span></span><br><span class="line"><span class="tag">        &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:text</span>=<span class="string">&quot;标题&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_gravity</span>=<span class="string">&quot;center&quot;</span></span></span><br><span class="line"><span class="tag">            /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">androidx.appcompat.widget.Toolbar</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220501153306602.png" alt="image-20220501153306602"></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+        <category>Android 控件</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>TextView</title>
+    <url>/personal-blog/2022/04/29/TextView/</url>
+    <content><![CDATA[<blockquote>
+<p>1.运行第一个android应用</p>
+<p>2.实现文字带阴影</p>
+<p>2.实现文字跑马灯</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="第一个Android应用"><a href="#第一个Android应用" class="headerlink" title="第一个Android应用"></a>第一个Android应用</h1><h2 id="创建Project"><a href="#创建Project" class="headerlink" title="创建Project"></a>创建<code>Project</code></h2><p>下载并配置完<code>Android Studio</code>,选择<code>New Project</code> -&gt; 选择<code>Empty Activity</code>-&gt;<code>next</code>,等待项目构建</p>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425203316935.png" alt="image-20220425203316935"></p>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425203510060.png" alt="image-20220425203510060"></p>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425203800729.png" alt="image-20220425203800729"></p>
+<h2 id="配置模拟器"><a href="#配置模拟器" class="headerlink" title="配置模拟器"></a>配置模拟器</h2><h3 id="下载模拟器"><a href="#下载模拟器" class="headerlink" title="下载模拟器"></a>下载模拟器</h3><p><del>模拟器随便选能用就行</del></p>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425204810357.png" alt="image-20220425204810357"><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425204843248.png" alt="image-20220425204843248"><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425204947363.png" alt="image-20220425204947363"></p>
+<h3 id="启动模拟器"><a href="#启动模拟器" class="headerlink" title="启动模拟器"></a>启动模拟器</h3><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425205202996.png" alt="image-20220425205202996"></p>
+<h2 id="第一个安卓应用"><a href="#第一个安卓应用" class="headerlink" title="第一个安卓应用"></a>第一个安卓应用</h2><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425205415122.png" alt="image-20220425205415122"></p>
+<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425205554559.png" alt="image-20220425205554559"></p>
+<h3 id="项目结构介绍"><a href="#项目结构介绍" class="headerlink" title="项目结构介绍"></a>项目结构介绍</h3><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425210705505.png" alt="image-20220425210705505"></p>
+<h1 id="TextView"><a href="#TextView" class="headerlink" title="TextView"></a><code>TextView</code></h1><h2 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>layout_width</code></td>
+<td>控件的宽度单位 <code>dp</code> 可选值:fill_parent、match_parent(和匹配父容器),wrap_content（包裹内容）</td>
+</tr>
+<tr>
+<td><code>layout_height</code></td>
+<td>控件的高度<code>dp</code>，（同<code>layout_width</code>）</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td>控件的id，用于区别其他组件</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td>控件中文本显示的内容</td>
+</tr>
+<tr>
+<td><code>textColor</code></td>
+<td>文本字体颜色</td>
+</tr>
+<tr>
+<td><code>textStyle</code></td>
+<td>可选风格:normal(无效果)，bold(加粗)，italic(斜体)</td>
+</tr>
+<tr>
+<td><code>textSize</code></td>
+<td>文本字体大小单位<code>sp</code>,</td>
+</tr>
+<tr>
+<td><code>background</code></td>
+<td>控件背景色（可以是图片）</td>
+</tr>
+<tr>
+<td><code>gravity</code></td>
+<td>内容的对齐方向</td>
+</tr>
+<tr>
+<td><code>textAllCape</code></td>
+<td>设置大小写</td>
+</tr>
+<tr>
+<td><code>hint</code></td>
+<td>设置提示文本</td>
+</tr>
+<tr>
+<td><code>textColorHint</code></td>
+<td>设置提示文本的颜色</td>
+</tr>
+<tr>
+<td><code>maxLength</code></td>
+<td>限制文本长度</td>
+</tr>
+<tr>
+<td><code>textIsSelectable</code></td>
+<td>设置文本是否可以复制</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>将光标放在属性上，按<code>ctrl+B</code>可以查看对应属性的说明：<code>name</code>指该属性的名称，<code>format</code>指该属性可以填的内容的格式，常见格式有如下：</p>
+<ul>
+<li>string 字符串</li>
+<li>reference 引用，可以引用其他<code>.xml</code>文件中的值</li>
+<li>color 字符串表示的颜色<code>#00000000</code>分别为一个透明度通道和RGB</li>
+<li>dimension 尺寸</li>
+</ul>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425214115361.png" alt="image-20220425214115361"></p>
+<h2 id="三种方式设置文本显示内容"><a href="#三种方式设置文本显示内容" class="headerlink" title="三种方式设置文本显示内容"></a>三种方式设置文本显示内容</h2><ul>
+<li>直接在<code>xml</code>设置文本</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:text</span>=<span class="string">&quot;Hello Android!&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:id</span>=<span class="string">&quot;@+id/textview1&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_width</span>=<span class="string">&quot;200dp&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">...</span></span></span><br><span class="line"><span class="tag">          /&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>引用<code>strings.xml</code>中的值</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">&quot;app_name&quot;</span>&gt;</span>HelloAndroid<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">&quot;tv_one&quot;</span>&gt;</span>Hello Android<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:id</span>=<span class="string">&quot;@+id/textview1&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_width</span>=<span class="string">&quot;200dp&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_height</span>=<span class="string">&quot;200dp&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:text</span>=<span class="string">&quot;@string/tv_one&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">...</span></span></span><br><span class="line"><span class="tag">          /&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用<code>java</code>代码添加</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        TextView viewById = (TextView) findViewById(R.id.textview1);</span><br><span class="line">        viewById.setText(<span class="string">&quot;HELLO ANDROID&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="文字带阴影"><a href="#文字带阴影" class="headerlink" title="文字带阴影"></a>文字带阴影</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">&quot;@+id/textview1&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:text</span>=<span class="string">&quot;@string/tv_one&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:textColor</span>=<span class="string">&quot;@color/black&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:textSize</span>=<span class="string">&quot;30sp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:background</span>=<span class="string">&quot;@color/teal_200&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:gravity</span>=<span class="string">&quot;center_horizontal&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shadowColor</span>=<span class="string">&quot;#FA0505&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shadowDx</span>=<span class="string">&quot;10.0&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shadowDy</span>=<span class="string">&quot;10.0&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shadowRadius</span>=<span class="string">&quot;3.0&quot;</span></span></span><br><span class="line"><span class="tag">     /&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220428123711360.png" alt="image-20220428123711360"></p>
+<h2 id="文字跑马灯"><a href="#文字跑马灯" class="headerlink" title="文字跑马灯"></a>文字跑马灯</h2><ul>
+<li><p>设置<code>TextView</code>可点击，运行程序后点击就可实现跑马灯</p>
+  <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">...</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:singleLine</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:ellipsize</span>=<span class="string">&quot;end&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:marqueeRepeatLimit</span>=<span class="string">&quot;marquee_forever&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:focusable</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:clickable</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">TextView</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加请求焦点的标签，程序运行自动实现跑马灯</p>
+  <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">...</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:singleLine</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:ellipsize</span>=<span class="string">&quot;end&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:marqueeRepeatLimit</span>=<span class="string">&quot;marquee_forever&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:focusable</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:clickable</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">requestFocus</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextView</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用<code>java</code>代码设置请求焦点</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        TextView viewById = findViewById(R.id.textview1);</span><br><span class="line">        viewById.requestFocus();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用自定义<code>TextView</code>请求焦点</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SuppressLint(&quot;AppCompatCustomView&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyView</span> <span class="keyword">extends</span> <span class="title">TextView</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyView</span><span class="params">(<span class="meta">@NonNull</span> Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyView</span><span class="params">(<span class="meta">@NonNull</span> Context context, <span class="meta">@Nullable</span> AttributeSet attrs)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, attrs);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyView</span><span class="params">(<span class="meta">@NonNull</span> Context context, <span class="meta">@Nullable</span> AttributeSet attrs, <span class="keyword">int</span> defStyleAttr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, attrs, defStyleAttr);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isFocused</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">  </span><br><span class="line"><span class="tag">&lt;<span class="name">com.example.helloandroid.MyView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">...</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:singleLine</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:ellipsize</span>=<span class="string">&quot;marquee&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:marqueeRepeatLimit</span>=<span class="string">&quot;marquee_forever&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:focusableInTouchMode</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:clickable</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:focusable</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    &gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">com.example.helloandroid.MyView</span>&gt;</span></span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Android</category>
+        <category>Android 控件</category>
+        <category>效果</category>
+        <category>文字阴影</category>
+        <category>跑马灯</category>
       </categories>
   </entry>
   <entry>
@@ -2966,140 +3167,6 @@
       <categories>
         <category>Java</category>
         <category>正则表达式</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>TextView</title>
-    <url>/personal-blog/2022/04/29/TextView/</url>
-    <content><![CDATA[<blockquote>
-<p>1.运行第一个android应用</p>
-<p>2.实现文字带阴影</p>
-<p>2.实现文字跑马灯</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="第一个Android应用"><a href="#第一个Android应用" class="headerlink" title="第一个Android应用"></a>第一个Android应用</h1><h2 id="创建Project"><a href="#创建Project" class="headerlink" title="创建Project"></a>创建<code>Project</code></h2><p>下载并配置完<code>Android Studio</code>,选择<code>New Project</code> -&gt; 选择<code>Empty Activity</code>-&gt;<code>next</code>,等待项目构建</p>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425203316935.png" alt="image-20220425203316935"></p>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425203510060.png" alt="image-20220425203510060"></p>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425203800729.png" alt="image-20220425203800729"></p>
-<h2 id="配置模拟器"><a href="#配置模拟器" class="headerlink" title="配置模拟器"></a>配置模拟器</h2><h3 id="下载模拟器"><a href="#下载模拟器" class="headerlink" title="下载模拟器"></a>下载模拟器</h3><p><del>模拟器随便选能用就行</del></p>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425204810357.png" alt="image-20220425204810357"><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425204843248.png" alt="image-20220425204843248"><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425204947363.png" alt="image-20220425204947363"></p>
-<h3 id="启动模拟器"><a href="#启动模拟器" class="headerlink" title="启动模拟器"></a>启动模拟器</h3><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425205202996.png" alt="image-20220425205202996"></p>
-<h2 id="第一个安卓应用"><a href="#第一个安卓应用" class="headerlink" title="第一个安卓应用"></a>第一个安卓应用</h2><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425205415122.png" alt="image-20220425205415122"></p>
-<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425205554559.png" alt="image-20220425205554559"></p>
-<h3 id="项目结构介绍"><a href="#项目结构介绍" class="headerlink" title="项目结构介绍"></a>项目结构介绍</h3><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425210705505.png" alt="image-20220425210705505"></p>
-<h1 id="TextView"><a href="#TextView" class="headerlink" title="TextView"></a><code>TextView</code></h1><h2 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>layout_width</code></td>
-<td>控件的宽度单位 <code>dp</code> 可选值:fill_parent、match_parent(和匹配父容器),wrap_content（包裹内容）</td>
-</tr>
-<tr>
-<td><code>layout_height</code></td>
-<td>控件的高度<code>dp</code>，（同<code>layout_width</code>）</td>
-</tr>
-<tr>
-<td><code>id</code></td>
-<td>控件的id，用于区别其他组件</td>
-</tr>
-<tr>
-<td><code>text</code></td>
-<td>控件中文本显示的内容</td>
-</tr>
-<tr>
-<td><code>textColor</code></td>
-<td>文本字体颜色</td>
-</tr>
-<tr>
-<td><code>textStyle</code></td>
-<td>可选风格:normal(无效果)，bold(加粗)，italic(斜体)</td>
-</tr>
-<tr>
-<td><code>textSize</code></td>
-<td>文本字体大小单位<code>sp</code>,</td>
-</tr>
-<tr>
-<td><code>background</code></td>
-<td>控件背景色（可以是图片）</td>
-</tr>
-<tr>
-<td><code>gravity</code></td>
-<td>内容的对齐方向</td>
-</tr>
-<tr>
-<td><code>textAllCape</code></td>
-<td>设置大小写</td>
-</tr>
-<tr>
-<td><code>hint</code></td>
-<td>设置提示文本</td>
-</tr>
-<tr>
-<td><code>textColorHint</code></td>
-<td>设置提示文本的颜色</td>
-</tr>
-<tr>
-<td><code>maxLength</code></td>
-<td>限制文本长度</td>
-</tr>
-<tr>
-<td><code>textIsSelectable</code></td>
-<td>设置文本是否可以复制</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>将光标放在属性上，按<code>ctrl+B</code>可以查看对应属性的说明：<code>name</code>指该属性的名称，<code>format</code>指该属性可以填的内容的格式，常见格式有如下：</p>
-<ul>
-<li>string 字符串</li>
-<li>reference 引用，可以引用其他<code>.xml</code>文件中的值</li>
-<li>color 字符串表示的颜色<code>#00000000</code>分别为一个透明度通道和RGB</li>
-<li>dimension 尺寸</li>
-</ul>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220425214115361.png" alt="image-20220425214115361"></p>
-<h2 id="三种方式设置文本显示内容"><a href="#三种方式设置文本显示内容" class="headerlink" title="三种方式设置文本显示内容"></a>三种方式设置文本显示内容</h2><ul>
-<li>直接在<code>xml</code>设置文本</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:text</span>=<span class="string">&quot;Hello Android!&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:id</span>=<span class="string">&quot;@+id/textview1&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_width</span>=<span class="string">&quot;200dp&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">...</span></span></span><br><span class="line"><span class="tag">          /&gt;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>引用<code>strings.xml</code>中的值</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">&quot;app_name&quot;</span>&gt;</span>HelloAndroid<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">string</span> <span class="attr">name</span>=<span class="string">&quot;tv_one&quot;</span>&gt;</span>Hello Android<span class="tag">&lt;/<span class="name">string</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:id</span>=<span class="string">&quot;@+id/textview1&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_width</span>=<span class="string">&quot;200dp&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:layout_height</span>=<span class="string">&quot;200dp&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">android:text</span>=<span class="string">&quot;@string/tv_one&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">...</span></span></span><br><span class="line"><span class="tag">          /&gt;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>使用<code>java</code>代码添加</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        TextView viewById = (TextView) findViewById(R.id.textview1);</span><br><span class="line">        viewById.setText(<span class="string">&quot;HELLO ANDROID&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><h2 id="文字带阴影"><a href="#文字带阴影" class="headerlink" title="文字带阴影"></a>文字带阴影</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">&quot;@+id/textview1&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:text</span>=<span class="string">&quot;@string/tv_one&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:textColor</span>=<span class="string">&quot;@color/black&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:textSize</span>=<span class="string">&quot;30sp&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:background</span>=<span class="string">&quot;@color/teal_200&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:gravity</span>=<span class="string">&quot;center_horizontal&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shadowColor</span>=<span class="string">&quot;#FA0505&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shadowDx</span>=<span class="string">&quot;10.0&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shadowDy</span>=<span class="string">&quot;10.0&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:shadowRadius</span>=<span class="string">&quot;3.0&quot;</span></span></span><br><span class="line"><span class="tag">     /&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220428123711360.png" alt="image-20220428123711360"></p>
-<h2 id="文字跑马灯"><a href="#文字跑马灯" class="headerlink" title="文字跑马灯"></a>文字跑马灯</h2><ul>
-<li><p>设置<code>TextView</code>可点击，运行程序后点击就可实现跑马灯</p>
-  <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">...</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:singleLine</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:ellipsize</span>=<span class="string">&quot;end&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:marqueeRepeatLimit</span>=<span class="string">&quot;marquee_forever&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:focusable</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:clickable</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">TextView</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加请求焦点的标签，程序运行自动实现跑马灯</p>
-  <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">...</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:singleLine</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:ellipsize</span>=<span class="string">&quot;end&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:marqueeRepeatLimit</span>=<span class="string">&quot;marquee_forever&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:focusable</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:clickable</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">requestFocus</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">TextView</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用<code>java</code>代码设置请求焦点</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        TextView viewById = findViewById(R.id.textview1);</span><br><span class="line">        viewById.requestFocus();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用自定义<code>TextView</code>请求焦点</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SuppressLint(&quot;AppCompatCustomView&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyView</span> <span class="keyword">extends</span> <span class="title">TextView</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyView</span><span class="params">(<span class="meta">@NonNull</span> Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyView</span><span class="params">(<span class="meta">@NonNull</span> Context context, <span class="meta">@Nullable</span> AttributeSet attrs)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, attrs);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyView</span><span class="params">(<span class="meta">@NonNull</span> Context context, <span class="meta">@Nullable</span> AttributeSet attrs, <span class="keyword">int</span> defStyleAttr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, attrs, defStyleAttr);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isFocused</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">  </span><br><span class="line"><span class="tag">&lt;<span class="name">com.example.helloandroid.MyView</span></span></span><br><span class="line"><span class="tag">    <span class="attr">...</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:singleLine</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:ellipsize</span>=<span class="string">&quot;marquee&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:marqueeRepeatLimit</span>=<span class="string">&quot;marquee_forever&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:focusableInTouchMode</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:clickable</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:focusable</span>=<span class="string">&quot;true&quot;</span></span></span><br><span class="line"><span class="tag">    &gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">com.example.helloandroid.MyView</span>&gt;</span></span><br><span class="line">  </span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Android</category>
-        <category>Android 控件</category>
-        <category>效果</category>
-        <category>文字阴影</category>
-        <category>跑马灯</category>
       </categories>
   </entry>
   <entry>
@@ -3432,71 +3499,6 @@ f(n-2) = 1*f(n-2) + 0*f(n-3) \\
 ]]></content>
       <categories>
         <category>算法</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>ToolBar</title>
-    <url>/personal-blog/2022/05/01/ToolBar/</url>
-    <content><![CDATA[<span id="more"></span>
-<blockquote>
-<ol>
-<li>ToolBar常见属性设置</li>
-<li>设置navigationIcon可被点击</li>
-<li>设置ToolBar的Title居中</li>
-</ol>
-</blockquote>
-<h1 id="ToolBar常见属性设置"><a href="#ToolBar常见属性设置" class="headerlink" title="ToolBar常见属性设置"></a>ToolBar常见属性设置</h1><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>android:background</td>
-<td>背景</td>
-</tr>
-<tr>
-<td>app:title</td>
-<td>标题</td>
-</tr>
-<tr>
-<td>app:subtitle</td>
-<td>子标题</td>
-</tr>
-<tr>
-<td>app:titleTextColor</td>
-<td>颜色</td>
-</tr>
-<tr>
-<td>app:subtitleTextColor</td>
-<td>子标题颜色</td>
-</tr>
-<tr>
-<td>app:titleMarginStart</td>
-<td>标题距离左边开始的间距(有Icon相对于Icon,无Icon相对于父容器边界)</td>
-</tr>
-<tr>
-<td>app:navigationIcon</td>
-<td>导航图标</td>
-</tr>
-<tr>
-<td>app:logo</td>
-</tr>
-</tbody>
-</table>
-</div>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">androidx.appcompat.widget.Toolbar</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/toolbar1&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">&quot;?attr/actionBarSize&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:background</span>=<span class="string">&quot;#00FF00&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:title</span>=<span class="string">&quot;大标题&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:subtitle</span>=<span class="string">&quot;小标题&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:titleTextColor</span>=<span class="string">&quot;#FF0000&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:subtitleTextColor</span>=<span class="string">&quot;#0000FF&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:titleMarginStart</span>=<span class="string">&quot;100dp&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:navigationIcon</span>=<span class="string">&quot;@drawable/ic_baseline_arrow_back_24&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:logo</span>=<span class="string">&quot;@drawable/ic_launcher_background&quot;</span></span></span><br><span class="line"><span class="tag">        /&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220501152343113.png" alt="image-20220501152343113"></p>
-<h1 id="设置navigationIcon可被点击"><a href="#设置navigationIcon可被点击" class="headerlink" title="设置navigationIcon可被点击"></a>设置navigationIcon可被点击</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Toolbar toolbar = findViewById(R.id.toolbar1);</span><br><span class="line"></span><br><span class="line">toolbar.setNavigationOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;箭头被点击了!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h1 id="设置ToolBar的Title居中"><a href="#设置ToolBar的Title居中" class="headerlink" title="设置ToolBar的Title居中"></a>设置ToolBar的Title居中</h1><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">androidx.appcompat.widget.Toolbar</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/toolbar2&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">&quot;?attr/actionBarSize&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:background</span>=<span class="string">&quot;#00FF00&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:navigationIcon</span>=<span class="string">&quot;@drawable/ic_baseline_arrow_back_24&quot;</span></span></span><br><span class="line"><span class="tag">        &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:text</span>=<span class="string">&quot;标题&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_gravity</span>=<span class="string">&quot;center&quot;</span></span></span><br><span class="line"><span class="tag">            /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">androidx.appcompat.widget.Toolbar</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220501153306602.png" alt="image-20220501153306602"></p>
-]]></content>
-      <categories>
-        <category>Android</category>
-        <category>Android 控件</category>
       </categories>
   </entry>
 </search>
