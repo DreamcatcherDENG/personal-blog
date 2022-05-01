@@ -6,7 +6,7 @@
   <link href="https://dreamcatcherdeng.gitee.io/personal-blog/atom.xml" rel="self"/>
   
   <link href="https://dreamcatcherdeng.gitee.io/personal-blog/"/>
-  <updated>2022-04-30T15:28:42.626Z</updated>
+  <updated>2022-05-01T07:56:17.914Z</updated>
   <id>https://dreamcatcherdeng.gitee.io/personal-blog/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ToolBar</title>
+    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/05/01/ToolBar/"/>
+    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/05/01/ToolBar/</id>
+    <published>2022-05-01T07:56:17.913Z</published>
+    <updated>2022-05-01T07:56:17.914Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><blockquote><ol><li>ToolBar常见属性设置</li><li>设置navigationIcon可被点击</li><li>设置ToolBar的Title居中</li></ol></blockquote><h1 id="ToolBar常见属性设置"><a href="#ToolBar常见属性设置" class="headerlink" title="ToolBar常见属性设置"></a>ToolBar常见属性设置</h1><div class="table-container"><table><thead><tr><th>属性</th><th>说明</th></tr></thead><tbody><tr><td>android:background</td><td>背景</td></tr><tr><td>app:title</td><td>标题</td></tr><tr><td>app:subtitle</td><td>子标题</td></tr><tr><td>app:titleTextColor</td><td>颜色</td></tr><tr><td>app:subtitleTextColor</td><td>子标题颜色</td></tr><tr><td>app:titleMarginStart</td><td>标题距离左边开始的间距(有Icon相对于Icon,无Icon相对于父容器边界)</td></tr><tr><td>app:navigationIcon</td><td>导航图标</td></tr><tr><td>app:logo</td></tr></tbody></table></div><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">androidx.appcompat.widget.Toolbar</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/toolbar1&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">&quot;?attr/actionBarSize&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:background</span>=<span class="string">&quot;#00FF00&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:title</span>=<span class="string">&quot;大标题&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:subtitle</span>=<span class="string">&quot;小标题&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:titleTextColor</span>=<span class="string">&quot;#FF0000&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:subtitleTextColor</span>=<span class="string">&quot;#0000FF&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:titleMarginStart</span>=<span class="string">&quot;100dp&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:navigationIcon</span>=<span class="string">&quot;@drawable/ic_baseline_arrow_back_24&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:logo</span>=<span class="string">&quot;@drawable/ic_launcher_background&quot;</span></span></span><br><span class="line"><span class="tag">        /&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220501152343113.png" alt="image-20220501152343113"></p><h1 id="设置navigationIcon可被点击"><a href="#设置navigationIcon可被点击" class="headerlink" title="设置navigationIcon可被点击"></a>设置navigationIcon可被点击</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Toolbar toolbar = findViewById(R.id.toolbar1);</span><br><span class="line"></span><br><span class="line">toolbar.setNavigationOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;箭头被点击了!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h1 id="设置ToolBar的Title居中"><a href="#设置ToolBar的Title居中" class="headerlink" title="设置ToolBar的Title居中"></a>设置ToolBar的Title居中</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">androidx.appcompat.widget.Toolbar</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/toolbar2&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">&quot;?attr/actionBarSize&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:background</span>=<span class="string">&quot;#00FF00&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:navigationIcon</span>=<span class="string">&quot;@drawable/ic_baseline_arrow_back_24&quot;</span></span></span><br><span class="line"><span class="tag">        &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:text</span>=<span class="string">&quot;标题&quot;</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_gravity</span>=<span class="string">&quot;center&quot;</span></span></span><br><span class="line"><span class="tag">            /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">androidx.appcompat.widget.Toolbar</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/DreamcatcherDENG/drawing-bed/raw/master/img/image-20220501153306602.png" alt="image-20220501153306602"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;ToolBar常见属性设置&lt;/li&gt;
+&lt;li&gt;设置navigationIcon可被点击&lt;/li&gt;
+&lt;li&gt;设置ToolBar的Title居中&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote</summary>
+      
+    
+    
+    
+    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    
+    <category term="Android 控件" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android-%E6%8E%A7%E4%BB%B6/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>javaScript and Node</title>
