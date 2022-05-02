@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/2022/05/02/ConstrainLayout/</loc>
+    
+    <lastmod>2022-05-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dreamcatcherdeng.gitee.io/personal-blog/2022/03/08/RegularExpression/</loc>
     
     <lastmod>2022-05-02</lastmod>
@@ -137,15 +146,6 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/2022/05/02/ConstrainLayout/</loc>
-    
-    <lastmod>2022-05-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://dreamcatcherdeng.gitee.io/personal-blog/2022/04/29/Button/</loc>
     
     <lastmod>2022-05-02</lastmod>
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/Anroid/</loc>
+    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -241,7 +241,7 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/</loc>
+    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/Java/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -255,20 +255,6 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/Anroid/Anroid-%E5%B8%83%E5%B1%80/</loc>
-    <lastmod>2022-05-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/JavaScript/</loc>
-    <lastmod>2022-05-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -276,14 +262,7 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/Java/</loc>
-    <lastmod>2022-05-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/JavaScript/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -311,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/JavaScript/ES6/</loc>
+    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -319,6 +298,13 @@
   
   <url>
     <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E6%9C%8D%E5%8A%A1/%E9%80%9A%E7%9F%A5%E6%9C%8D%E5%8A%A1/</loc>
+    <lastmod>2022-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dreamcatcherdeng.gitee.io/personal-blog/categories/JavaScript/ES6/</loc>
     <lastmod>2022-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
