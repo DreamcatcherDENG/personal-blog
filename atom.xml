@@ -3,11 +3,11 @@
   <title>DreamcatcherDENG 的个人博客</title>
   
   
-  <link href="https://dreamcatcherdeng.gitee.io/personal-blog/atom.xml" rel="self"/>
+  <link href="https://dreamcatcherdeng.github.io/personal-blog/atom.xml" rel="self"/>
   
-  <link href="https://dreamcatcherdeng.gitee.io/personal-blog/"/>
+  <link href="https://dreamcatcherdeng.github.io/personal-blog/"/>
   <updated>2022-06-04T06:28:47.638Z</updated>
-  <id>https://dreamcatcherdeng.gitee.io/personal-blog/</id>
+  <id>https://dreamcatcherdeng.github.io/personal-blog/</id>
   
   <author>
     <name>dreamcatcherdeng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Ffmpeg格式转换工具</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/FormatConvert/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/FormatConvert/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/FormatConvert/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/FormatConvert/</id>
     <published>2022-06-03T08:24:52.087Z</published>
     <updated>2022-06-04T06:28:47.638Z</updated>
     
@@ -37,17 +37,17 @@
     
     
     
-    <category term="自编工具" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E8%87%AA%E7%BC%96%E5%B7%A5%E5%85%B7/"/>
+    <category term="自编工具" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E8%87%AA%E7%BC%96%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="脚本制作" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E8%87%AA%E7%BC%96%E5%B7%A5%E5%85%B7/%E8%84%9A%E6%9C%AC%E5%88%B6%E4%BD%9C/"/>
+    <category term="脚本制作" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E8%87%AA%E7%BC%96%E5%B7%A5%E5%85%B7/%E8%84%9A%E6%9C%AC%E5%88%B6%E4%BD%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>Navigation</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/Navigation/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/Navigation/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/Navigation/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/Navigation/</id>
     <published>2022-06-03T08:06:40.461Z</published>
     <updated>2022-06-04T06:28:47.651Z</updated>
     
@@ -61,21 +61,21 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Jetpack" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Jetpack/"/>
+    <category term="Jetpack" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Jetpack/"/>
     
-    <category term="效果" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
+    <category term="效果" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
     
-    <category term="导航效果" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E5%AF%BC%E8%88%AA%E6%95%88%E6%9E%9C/"/>
+    <category term="导航效果" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E5%AF%BC%E8%88%AA%E6%95%88%E6%9E%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>Room</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/Room/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/Room/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/Room/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/Room/</id>
     <published>2022-06-03T08:06:40.461Z</published>
     <updated>2022-06-04T06:28:47.661Z</updated>
     
@@ -90,17 +90,17 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Jetpack" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Jetpack/"/>
+    <category term="Jetpack" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Jetpack/"/>
     
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/LinearLayout/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/LinearLayout/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/LinearLayout/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/LinearLayout/</id>
     <published>2022-06-03T08:06:40.446Z</published>
     <updated>2022-06-04T06:28:47.647Z</updated>
     
@@ -114,19 +114,19 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 布局" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/"/>
+    <category term="Android 布局" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/"/>
     
-    <category term="layout_weight" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/layout-weight/"/>
+    <category term="layout_weight" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/layout-weight/"/>
     
     
   </entry>
   
   <entry>
     <title>LiveData and ViewModel</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/LiveDataAndViewModel/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/LiveDataAndViewModel/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/LiveDataAndViewModel/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/LiveDataAndViewModel/</id>
     <published>2022-06-03T08:06:40.446Z</published>
     <updated>2022-06-04T06:28:47.650Z</updated>
     
@@ -142,17 +142,17 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Jetpack" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Jetpack/"/>
+    <category term="Jetpack" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Jetpack/"/>
     
     
   </entry>
   
   <entry>
     <title>自定义View</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/CustomView/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/CustomView/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/CustomView/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/CustomView/</id>
     <published>2022-06-03T08:06:40.430Z</published>
     <updated>2022-06-04T06:28:47.635Z</updated>
     
@@ -171,25 +171,25 @@
     
     
     
-    <category term="Android，Android 控件" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android%EF%BC%8CAndroid-%E6%8E%A7%E4%BB%B6/"/>
+    <category term="Android，Android 控件" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android%EF%BC%8CAndroid-%E6%8E%A7%E4%BB%B6/"/>
     
-    <category term="效果" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
+    <category term="常见问题" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     
-    <category term="常见问题" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    <category term="效果" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
     
-    <category term="已解决" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%B7%B2%E8%A7%A3%E5%86%B3/"/>
+    <category term="已解决" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%B7%B2%E8%A7%A3%E5%86%B3/"/>
     
-    <category term="进度条加载效果" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E8%BF%9B%E5%BA%A6%E6%9D%A1%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C/"/>
+    <category term="进度条加载效果" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E8%BF%9B%E5%BA%A6%E6%9D%A1%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C/"/>
     
-    <category term="invalidate不生效" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%B7%B2%E8%A7%A3%E5%86%B3/invalidate%E4%B8%8D%E7%94%9F%E6%95%88/"/>
+    <category term="invalidate不生效" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%B7%B2%E8%A7%A3%E5%86%B3/invalidate%E4%B8%8D%E7%94%9F%E6%95%88/"/>
     
     
   </entry>
   
   <entry>
     <title>Ffmpeg格式转换工具</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/FormatConvert/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/FormatConvert/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/FormatConvert/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/FormatConvert/</id>
     <published>2022-06-03T08:06:40.430Z</published>
     <updated>2022-06-03T08:21:09.482Z</updated>
     
@@ -207,17 +207,40 @@
     
     
     
-    <category term="自编工具" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E8%87%AA%E7%BC%96%E5%B7%A5%E5%85%B7/"/>
+    <category term="自编工具" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E8%87%AA%E7%BC%96%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="脚本制作" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E8%87%AA%E7%BC%96%E5%B7%A5%E5%85%B7/%E8%84%9A%E6%9C%AC%E5%88%B6%E4%BD%9C/"/>
+    <category term="脚本制作" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E8%87%AA%E7%BC%96%E5%B7%A5%E5%85%B7/%E8%84%9A%E6%9C%AC%E5%88%B6%E4%BD%9C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>BottomNavigationView</title>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/BottomNavigationView/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/BottomNavigationView/</id>
+    <published>2022-06-03T08:06:40.415Z</published>
+    <updated>2022-06-04T06:28:47.626Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>1.<code>BottomNavigationView</code></p></blockquote><span id="more"></span><h1 id="BottomNavigationView"><a href="#BottomNavigationView" class="headerlink" title="BottomNavigationView"></a>BottomNavigationView</h1><p>在<code>activity_main.xml</code>中使用<code>BottomNavigationView</code></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">com.google.android.material.bottomnavigation.BottomNavigationView</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/bottom_nav_view&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:itemTextAppearanceActive</span>=<span class="string">&quot;@style/bottom_tab_title_active&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:itemTextAppearanceInactive</span>=<span class="string">&quot;@style/bottom_tab_title_inactive&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:labelVisibilityMode</span>=<span class="string">&quot;labeled&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:menu</span>=<span class="string">&quot;@menu/bottom_nav_menu&quot;</span> /&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>为<code>BottomNavigationView</code>添加菜单<code>app:menu=&quot;@menu/bottom_nav_menu&quot;</code>,菜单中的内容</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">menu</span> <span class="attr">xmlns:android</span>=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:app</span>=<span class="string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/homeFragment&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;首页&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/friendsFragment&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;朋友&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/photographActivity&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:icon</span>=<span class="string">&quot;@drawable/ic_baseline_add_a_photo_24&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;TODO&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/newsFragment&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;消息&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/meFragment&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;我&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">menu</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>设置title显示的样式(text和size)等</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">app:itemTextAppearanceActive=&quot;@style/bottom_tab_title_active&quot;</span><br><span class="line">app:itemTextAppearanceInactive=&quot;@style/bottom_tab_title_inactive&quot;</span><br></pre></td></tr></table></figure><p>样式文件<code>style.xml</code></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">&quot;bottom_tab_title_active&quot;</span>&gt;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:textSize&quot;</span>&gt;</span>30sp<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">&quot;bottom_tab_title_inactive&quot;</span>&gt;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:textSize&quot;</span>&gt;</span>24sp<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;1.&lt;code&gt;BottomNavigationView&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
+    
+    <category term="Android 控件" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>View Binding and Data Binding</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/Binding/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/Binding/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/Binding/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/Binding/</id>
     <published>2022-06-03T08:06:40.415Z</published>
     <updated>2022-06-04T06:28:47.625Z</updated>
     
@@ -233,44 +256,21 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Jetpack" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Jetpack/"/>
+    <category term="Jetpack" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Jetpack/"/>
     
-    <category term="效果" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
+    <category term="效果" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
     
-    <category term="本地及网络图片加载" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E6%9C%AC%E5%9C%B0%E5%8F%8A%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>BottomNavigationView</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/BottomNavigationView/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/BottomNavigationView/</id>
-    <published>2022-06-03T08:06:40.415Z</published>
-    <updated>2022-06-04T06:28:47.626Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>1.<code>BottomNavigationView</code></p></blockquote><span id="more"></span><h1 id="BottomNavigationView"><a href="#BottomNavigationView" class="headerlink" title="BottomNavigationView"></a>BottomNavigationView</h1><p>在<code>activity_main.xml</code>中使用<code>BottomNavigationView</code></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">com.google.android.material.bottomnavigation.BottomNavigationView</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/bottom_nav_view&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">&quot;match_parent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">&quot;wrap_content&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:itemTextAppearanceActive</span>=<span class="string">&quot;@style/bottom_tab_title_active&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:itemTextAppearanceInactive</span>=<span class="string">&quot;@style/bottom_tab_title_inactive&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:labelVisibilityMode</span>=<span class="string">&quot;labeled&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">app:menu</span>=<span class="string">&quot;@menu/bottom_nav_menu&quot;</span> /&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>为<code>BottomNavigationView</code>添加菜单<code>app:menu=&quot;@menu/bottom_nav_menu&quot;</code>,菜单中的内容</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">menu</span> <span class="attr">xmlns:android</span>=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:app</span>=<span class="string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/homeFragment&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;首页&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/friendsFragment&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;朋友&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/photographActivity&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:icon</span>=<span class="string">&quot;@drawable/ic_baseline_add_a_photo_24&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;TODO&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/newsFragment&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;消息&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">&quot;@+id/meFragment&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">&quot;我&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">menu</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>设置title显示的样式(text和size)等</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">app:itemTextAppearanceActive=&quot;@style/bottom_tab_title_active&quot;</span><br><span class="line">app:itemTextAppearanceInactive=&quot;@style/bottom_tab_title_inactive&quot;</span><br></pre></td></tr></table></figure><p>样式文件<code>style.xml</code></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">&quot;bottom_tab_title_active&quot;</span>&gt;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:textSize&quot;</span>&gt;</span>30sp<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">&quot;bottom_tab_title_inactive&quot;</span>&gt;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:textSize&quot;</span>&gt;</span>24sp<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;1.&lt;code&gt;BottomNavigationView&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
-    
-    <category term="Android 控件" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
+    <category term="本地及网络图片加载" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E6%9C%AC%E5%9C%B0%E5%8F%8A%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD/"/>
     
     
   </entry>
   
   <entry>
     <title>Activity</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/Activity/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/Activity/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/Activity/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/Activity/</id>
     <published>2022-06-03T08:06:40.399Z</published>
     <updated>2022-06-04T06:28:47.614Z</updated>
     
@@ -287,17 +287,17 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 界面" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E7%95%8C%E9%9D%A2/"/>
+    <category term="Android 界面" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E7%95%8C%E9%9D%A2/"/>
     
     
   </entry>
   
   <entry>
     <title>ViewPager</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/ViewPager/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/ViewPager/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/ViewPager/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/ViewPager/</id>
     <published>2022-06-03T01:47:50.572Z</published>
     <updated>2022-06-04T06:28:47.673Z</updated>
     
@@ -311,21 +311,21 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 控件" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
+    <category term="Android 控件" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
     
-    <category term="效果" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
+    <category term="效果" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
     
-    <category term="ViewPager实现翻页效果" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/ViewPager%E5%AE%9E%E7%8E%B0%E7%BF%BB%E9%A1%B5%E6%95%88%E6%9E%9C/"/>
+    <category term="ViewPager实现翻页效果" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/ViewPager%E5%AE%9E%E7%8E%B0%E7%BF%BB%E9%A1%B5%E6%95%88%E6%9E%9C/"/>
     
     
   </entry>
   
   <entry>
     <title>ToolBar</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/ToolBar/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/ToolBar/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/ToolBar/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/ToolBar/</id>
     <published>2022-06-03T01:47:50.557Z</published>
     <updated>2022-06-04T06:28:47.671Z</updated>
     
@@ -346,17 +346,17 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 控件" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
+    <category term="Android 控件" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>TextView</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/TextView/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/TextView/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/TextView/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/TextView/</id>
     <published>2022-06-03T01:47:50.557Z</published>
     <updated>2022-06-04T06:28:47.670Z</updated>
     
@@ -371,23 +371,23 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 控件" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
+    <category term="Android 控件" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
     
-    <category term="效果" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
+    <category term="效果" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/"/>
     
-    <category term="文字阴影" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E6%96%87%E5%AD%97%E9%98%B4%E5%BD%B1/"/>
+    <category term="文字阴影" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E6%96%87%E5%AD%97%E9%98%B4%E5%BD%B1/"/>
     
-    <category term="跑马灯" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E8%B7%91%E9%A9%AC%E7%81%AF/"/>
+    <category term="跑马灯" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E8%B7%91%E9%A9%AC%E7%81%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>TableLayout</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/TableLayout/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/TableLayout/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/TableLayout/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/TableLayout/</id>
     <published>2022-06-03T01:47:50.541Z</published>
     <updated>2022-06-04T06:28:47.667Z</updated>
     
@@ -401,17 +401,17 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 布局" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/"/>
+    <category term="Android 布局" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/"/>
     
     
   </entry>
   
   <entry>
     <title>RelativeLaout</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/RelativeLayout/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/RelativeLayout/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/RelativeLayout/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/RelativeLayout/</id>
     <published>2022-06-03T01:47:50.525Z</published>
     <updated>2022-06-04T06:28:47.659Z</updated>
     
@@ -425,21 +425,21 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 布局" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/"/>
+    <category term="Android 布局" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/"/>
     
-    <category term="margin" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/margin/"/>
+    <category term="margin" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/margin/"/>
     
-    <category term="padding" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/padding/"/>
+    <category term="padding" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/padding/"/>
     
     
   </entry>
   
   <entry>
     <title>模拟Android的点击事件</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/SimulateActivity/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/SimulateActivity/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/SimulateActivity/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/SimulateActivity/</id>
     <published>2022-06-03T01:47:50.525Z</published>
     <updated>2022-06-04T06:28:47.663Z</updated>
     
@@ -460,17 +460,17 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="学习感悟" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/%E5%AD%A6%E4%B9%A0%E6%84%9F%E6%82%9F/"/>
+    <category term="学习感悟" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/%E5%AD%A6%E4%B9%A0%E6%84%9F%E6%82%9F/"/>
     
     
   </entry>
   
   <entry>
     <title>正则表达式</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/RegularExpression/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/RegularExpression/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/RegularExpression/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/RegularExpression/</id>
     <published>2022-06-03T01:47:50.510Z</published>
     <updated>2022-06-04T06:28:47.743Z</updated>
     
@@ -483,17 +483,17 @@
     
     
     
-    <category term="Java" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Java/"/>
+    <category term="Java" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Java/"/>
     
-    <category term="正则表达式" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Java/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <category term="正则表达式" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Java/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
     
   </entry>
   
   <entry>
     <title>ProgressBar</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/ProgressBar/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/ProgressBar/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/ProgressBar/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/ProgressBar/</id>
     <published>2022-06-03T01:47:50.494Z</published>
     <updated>2022-06-04T06:28:47.656Z</updated>
     
@@ -507,17 +507,17 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 控件" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
+    <category term="Android 控件" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>RecyclerView</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/RecyclerView/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/RecyclerView/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/RecyclerView/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/RecyclerView/</id>
     <published>2022-06-03T01:47:50.494Z</published>
     <updated>2022-06-04T06:28:47.657Z</updated>
     
@@ -530,17 +530,17 @@
     
     
     
-    <category term="Android" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/"/>
+    <category term="Android" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/"/>
     
-    <category term="Android 控件" scheme="https://dreamcatcherdeng.gitee.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
+    <category term="Android 控件" scheme="https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E6%8E%A7%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>PopupWindow</title>
-    <link href="https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/PopupWindow/"/>
-    <id>https://dreamcatcherdeng.gitee.io/personal-blog/2022/06/03/PopupWindow/</id>
+    <link href="https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/PopupWindow/"/>
+    <id>https://dreamcatcherdeng.github.io/personal-blog/2022/06/03/PopupWindow/</id>
     <published>2022-06-03T01:47:50.479Z</published>
     <updated>2022-06-04T06:28:47.654Z</updated>
     
