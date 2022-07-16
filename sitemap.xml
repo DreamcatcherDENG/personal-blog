@@ -404,6 +404,13 @@
   </url>
   
   <url>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2022-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Jetpack/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -412,13 +419,6 @@
   
   <url>
     <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/JavaScript/</loc>
-    <lastmod>2022-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -453,7 +453,7 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/Android/%E5%AD%A6%E4%B9%A0%E6%84%9F%E6%82%9F/</loc>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/margin/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -467,14 +467,14 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/JavaScript/ES6/</loc>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%B7%B2%E8%A7%A3%E5%86%B3/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%B7%B2%E8%A7%A3%E5%86%B3/</loc>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/JavaScript/ES6/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -502,7 +502,7 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E5%AF%BC%E8%88%AA%E6%95%88%E6%9E%9C/</loc>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/padding/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -516,7 +516,14 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/margin/</loc>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E5%AF%BC%E8%88%AA%E6%95%88%E6%9E%9C/</loc>
+    <lastmod>2022-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/Android/%E5%AD%A6%E4%B9%A0%E6%84%9F%E6%82%9F/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -530,21 +537,14 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2022-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/Android/Android-%E5%B8%83%E5%B1%80/padding/</loc>
-    <lastmod>2022-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/ViewPager%E5%AE%9E%E7%8E%B0%E7%BF%BB%E9%A1%B5%E6%95%88%E6%9E%9C/</loc>
+    <lastmod>2022-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -565,14 +565,14 @@
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/MySQL/</loc>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E8%B7%91%E9%A9%AC%E7%81%AF/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/%E6%95%88%E6%9E%9C/%E8%B7%91%E9%A9%AC%E7%81%AF/</loc>
+    <loc>https://dreamcatcherdeng.github.io/personal-blog/categories/MySQL/</loc>
     <lastmod>2022-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
